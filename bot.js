@@ -59,7 +59,9 @@ if (message.content === '!spam') {
       }
 });
 
-client.on('message', message => {
+var prefix = "+";
+
+bot1.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
